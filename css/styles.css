@@ -205,6 +205,59 @@ body {
 /* ==================================== */
 /*                 SKINS                */
 /* ==================================== */
+.one {
+  animation-name: skin;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.two {
+  animation-name: skin;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.three {
+  animation-name: skin;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.four {
+  animation-name: skin;
+  animation-duration: 1100ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.five {
+  animation-name: skin;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.six {
+  animation-name: skin;
+  animation-duration: 1300ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes skin {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .skin {
   float: right;
   margin-right: 3%;
