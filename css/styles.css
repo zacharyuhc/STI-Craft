@@ -13,6 +13,9 @@
 body {
   background: var(--main-bg-color);
 }
+/* ==================================== */
+/*                 TITRE                */
+/* ==================================== */
 .titre {
   color: var(--h1);
   font-family: "Montserrat";
@@ -39,6 +42,9 @@ body {
   line-height: 24px;
   text-align: left;
 }
+/* ==================================== */
+/*                 NAVBAR               */
+/* ==================================== */
 ul {
   margin-top: 25px;
   margin-left: 3%;
@@ -62,7 +68,21 @@ li a {
 .roadmap {
   margin-left: 30px;
 }
+.nav_play{
+    cursor: pointer;
 
+    position: absolute;
+    right:20px;
+
+    font-family: "Montserrat";
+    font-weight: bold;
+    
+    color: var(--h1);
+    padding: 5px 15px 5px 15px;
+
+    background-color: var(--play);
+    border-radius: 6px;
+}
 /* ==================================== */
 /*                BOUTONS               */
 /* ==================================== */
@@ -71,6 +91,7 @@ li a {
   align-items: center;
   margin-top: 2.5%;
   margin-left: 3%;
+  width: 50%;
 }
 .play {
   cursor: pointer;
@@ -140,12 +161,46 @@ li a {
 /* ==================================== */
 /*                 SKINS                */
 /* ==================================== */
-
 .skin{
     float: right;
-    display: block;
-    text-align: right;    
+    margin-right: 3%;
 }
 img{
-    height: 300px;
+    height: 250px;
 }
+.name{
+    margin-top: 3px;
+    cursor: pointer;
+
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    
+    color: var(--h1);
+    padding: 5px 15px 5px 15px;
+
+    background-color: var(--play);
+    border-radius: 6px;
+}
+.group_skin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.all_skin{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/* ==================================== */
+/*                ROADMAP               */
+/* ==================================== */
+
+.rectangle {
+    margin-right: 3%;
+    width  : 100px;
+    height : 50px;
+    background : green;
+  }
