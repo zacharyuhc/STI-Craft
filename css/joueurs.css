@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-bg-color: #3c3c45;
+  --h1: white;
+  --play: #0066b8;
+  --info-bg: #dbdbdb;
+  --info-text: #303030;
+  --feature-h2: #cfcfcf;
+  --feature-border: #0066b8;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+center {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 80px;
+
+  color: var(--h1);
+}
+/* ==================================== */
+/*                 SKINS                */
+/* ==================================== */
+.skin {
+  margin-right: 3%;
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.group_skin img {
+  height: 250px;
+}
+.group_skin {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+}
+.group_skin:hover {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.05);
+}
+.group_skin:hover .name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.09);
+}
+.name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
+  margin-top: 3px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--play);
+  border-radius: 6px;
+}
+.group_skin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.all_skin {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+/* ==================================== */
+/*              ANIMATIONS              */
+/* ==================================== */
+.one {
+  animation-name: play;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.two {
+  animation-name: play;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.three {
+  animation-name: play;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.four {
+  animation-name: play;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.five {
+  animation-name: play;
+  animation-duration: 1100ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.six {
+  animation-name: play;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.seven {
+  animation-name: play;
+  animation-duration: 1300ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.eight {
+  animation-name: play;
+  animation-duration: 1400ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.nine {
+  animation-name: play;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.ten {
+  animation-name: play;
+  animation-duration: 1600ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.eleven {
+  animation-name: play;
+  animation-duration: 1700ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.twelve {
+  animation-name: play;
+  animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes play {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

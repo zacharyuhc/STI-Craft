@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <script
   src="https://kit.fontawesome.com/6e717771e0.js"
   crossorigin="anonymous"
@@ -13,10 +14,11 @@
 </head>
 <body>
   <ul>
-    <li><a href="joueurs">Joueurs</a></li>
-    <li><a class="roadmap" href="roadmap">Roadmap</a></li>
-    <li><a class="map" href="/map">Map</a></li>
-    <a class="nav_play">Jouer</a>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a style="margin-left: 30px;" href="joueurs.html">Joueurs</a></li>
+    <li><a style="margin-left: 30px;" href="roadmap">Roadmap</a></li>
+    <li><a style="margin-left: 30px;" href="/map">Map</a></li>
+    <a class="nav_play" id="run">Jouer</a>
   </ul>
   <div class="home">
     <div class="skin">
@@ -62,7 +64,7 @@
       <div class="group">
         <div class="border">
           <h1 class="adresse">Adresse</h1>
-          <h2>stid2b.aternos.me:37589</h2>
+          <h2 class="adrs" style="cursor: pointer;">stid2b.aternos.me:37589</h2>
         </div>
       </div>
       <div class="group">
@@ -84,4 +86,5 @@
   </div>
 </body>
 <script src="js/scripte.js"></script>
+<script src="js/confetti.js"></script>
 </html>
