@@ -325,3 +325,13 @@ body {
 .rectangle img {
   height: 100%;
 }
+
+/* ==================================== */
+/*              RESPONSIVE              */
+/* ==================================== */
+
+@media (max-width: 1386px) {
+  .rectangle img  {
+    height: 90%;
+  }
+}
