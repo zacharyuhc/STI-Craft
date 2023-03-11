@@ -6,8 +6,8 @@
   --play: #0066b8;
   --info-bg: #dbdbdb;
   --info-text: #303030;
-  --feature-h2: #CFCFCF;
-  --feature-border: #0066B8;
+  --feature-h2: #cfcfcf;
+  --feature-border: #0066b8;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   font-family: "Montserrat";
 
   margin-left: 3%;
-  margin-top: 3%;
+  margin-top: 2%;
 
   font-size: 64px;
   font-weight: 800;
@@ -68,20 +68,20 @@ li a {
 .roadmap {
   margin-left: 30px;
 }
-.nav_play{
-    cursor: pointer;
+.nav_play {
+  cursor: pointer;
 
-    position: absolute;
-    right:20px;
+  position: absolute;
+  right: 20px;
 
-    font-family: "Montserrat";
-    font-weight: bold;
-    
-    color: var(--h1);
-    padding: 5px 15px 5px 15px;
+  font-family: "Montserrat";
+  font-weight: bold;
 
-    background-color: var(--play);
-    border-radius: 6px;
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--play);
+  border-radius: 6px;
 }
 /* ==================================== */
 /*                BOUTONS               */
@@ -89,7 +89,7 @@ li a {
 .boutons {
   display: flex;
   align-items: center;
-  margin-top: 2.5%;
+  margin-top: 1%;
   margin-left: 3%;
   width: 50%;
 }
@@ -131,76 +131,83 @@ li a {
 /* ==================================== */
 /*                 FEATURE              */
 /* ==================================== */
-.feature{
-    display: flex;
+.feature {
+  display: flex;
 }
-.border{
-    border-left: solid 4px var(--feature-border);
+.border {
+  border-left: solid 4px var(--feature-border);
 }
-.group{
-    margin-left: 5%;
-    margin-top: 2%;
+.group {
+  margin-left: 5%;
+  margin-top: 1%;
 }
-.group h1{
-    margin-left: 10px;
-    color: var(--h1);
+.group h1 {
+  margin-left: 10px;
+  color: var(--h1);
 
-    font-size: 27px;
-    font-family: "Montserrat";
-    font-weight: 800;
-    text-align: left;
-  
+  font-size: 27px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: left;
 }
-.group h2{
-    font-family: "Montserrat";
-    font-size: 16px;
-    margin-top: -15px;
-    margin-left: 10px;
-    color: var(--feature-h2);
+.group h2 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  margin-top: -15px;
+  margin-left: 10px;
+  color: var(--feature-h2);
 }
 /* ==================================== */
 /*                 SKINS                */
 /* ==================================== */
-.skin{
-    float: right;
-    margin-right: 3%;
+.skin {
+  float: right;
+  margin-right: 3%;
 }
-img{
-    height: 250px;
+.group_skin img {
+  height: 250px;
 }
-.name{
-    margin-top: 3px;
-    cursor: pointer;
+.name {
+  margin-top: 3px;
+  cursor: pointer;
 
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 14px;
-    
-    color: var(--h1);
-    padding: 5px 15px 5px 15px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
 
-    background-color: var(--play);
-    border-radius: 6px;
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--play);
+  border-radius: 6px;
 }
-.group_skin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+.group_skin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.all_skin{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+.all_skin {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 /* ==================================== */
 /*                ROADMAP               */
 /* ==================================== */
-
 .rectangle {
-    margin-right: 3%;
-    width  : 100px;
-    height : 50px;
-    background : green;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  margin-top: 1%;
+  margin-left: 2.8%;
+  width: 55%;
+  height: 230px;
+  background: #464650;
+  border-radius: 16px;
+}
+.rectangle img {
+  height: 100%;
+}
