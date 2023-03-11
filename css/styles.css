@@ -71,6 +71,7 @@ body {
   margin-top: -1.5%;
 
   width: 50%;
+  max-width: 760px;
 
   margin-left: 3%;
 
@@ -89,6 +90,8 @@ body {
   margin-top: 2%;
   margin-left: 3%;
   width: 50%;
+  max-width: 750px;
+
 }
 .play {
   cursor: pointer;
@@ -247,6 +250,20 @@ body {
 
   animation-iteration-count: 1;
 }
+.seven{
+  animation-name: skin;
+  animation-duration: 1400ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.eight{
+  animation-name: skin;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
 @keyframes skin {
   0% {
     opacity: 0;
@@ -261,7 +278,7 @@ body {
 .skin {
   float: right;
   margin-right: 3%;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 .group_skin img {
   height: 250px;
@@ -279,6 +296,23 @@ body {
   transform: scale(1.09);
 }
 .name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
+  margin-top: 3px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--play);
+  border-radius: 6px;
+}
+.name_2{
   transition: transform 330ms ease-in-out;
   transform: scale(1);
 
@@ -319,6 +353,7 @@ body {
   margin-left: 2.8%;
   width: 50%;
   height: 230px;
+  max-width: 750px;
   background: #464650;
   border-radius: 16px;
 }
@@ -333,5 +368,29 @@ body {
 @media (max-width: 1386px) {
   .rectangle img  {
     height: 90%;
+  }
+}
+@media (max-width: 1529px) {
+  .skin {
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1611px) {
+  .group_skin img {
+    height: 270px;
+  }
+  .skin {
+    margin-top: 1%;
+  }
+}
+@media (max-width: 1683px) {
+  .eight {
+    display: none;
+  }
+  .four {
+    display: none;
+  }
+  .name_2 {
+    display: none;
   }
 }
