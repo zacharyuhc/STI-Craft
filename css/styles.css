@@ -3,21 +3,49 @@
 :root {
   --main-bg-color: #3c3c45;
   --h1: white;
+  --play: #0066b8;
+  --info-bg: #dbdbdb;
+  --info-text: #303030;
+  --feature-h2: #CFCFCF;
+  --feature-border: #0066B8;
 }
 
 body {
   background: var(--main-bg-color);
 }
-h1 {
+.titre {
   color: var(--h1);
   font-family: "Montserrat";
-  font-weight: bolder;
+
+  margin-left: 3%;
+  margin-top: 3%;
+
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 80px;
+  text-align: left;
+}
+.sous-titre {
+  color: var(--h1);
+  margin-top: -1.5%;
+
+  width: 50%;
+
+  margin-left: 3%;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 ul {
   margin-top: 25px;
+  margin-left: 3%;
   list-style-type: none;
   text-decoration: none;
   display: flex;
+  align-items: center;
 
   font-family: "Montserrat";
   font-weight: bolder;
@@ -25,6 +53,99 @@ ul {
 }
 li a {
   color: var(--h1);
-  margin-left: 30px;
   text-decoration: none;
+}
+
+.map {
+  margin-left: 30px;
+}
+.roadmap {
+  margin-left: 30px;
+}
+
+/* ==================================== */
+/*                BOUTONS               */
+/* ==================================== */
+.boutons {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5%;
+  margin-left: 3%;
+}
+.play {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  width: 385px;
+
+  color: var(--h1);
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  background: var(--play);
+  border-radius: 6px;
+}
+.info {
+  cursor: pointer;
+
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  width: 385px;
+
+  color: var(--info-text);
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  background: var(--info-bg);
+  border-radius: 6px;
+}
+/* ==================================== */
+/*                 FEATURE              */
+/* ==================================== */
+.feature{
+    display: flex;
+}
+.border{
+    border-left: solid 4px var(--feature-border);
+}
+.group{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.group h1{
+    margin-left: 10px;
+    color: var(--h1);
+
+    font-size: 27px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    text-align: left;
+  
+}
+.group h2{
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-top: -15px;
+    margin-left: 10px;
+    color: var(--feature-h2);
+}
+/* ==================================== */
+/*                 SKINS                */
+/* ==================================== */
+
+.skin{
+    float: right;
+    display: block;
+    text-align: right;    
+}
+img{
+    height: 300px;
 }
