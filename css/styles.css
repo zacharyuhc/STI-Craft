@@ -25,8 +25,46 @@ body {
 
   font-size: 64px;
   font-weight: 800;
-  line-height: 80px;
+  line-height: 60px;
   text-align: left;
+}
+.container p {
+  font-size: 3rem;
+  text-align: left;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  color: var(--h1);
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: left;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 .sous-titre {
   color: var(--h1);
@@ -46,6 +84,7 @@ body {
 /*                 NAVBAR               */
 /* ==================================== */
 ul {
+  position: relative;
   margin-top: 25px;
   margin-left: 3%;
   list-style-type: none;
@@ -60,8 +99,52 @@ ul {
 li a {
   color: var(--h1);
   text-decoration: none;
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+li a {
+  position: relative;
+}
+li a::after {
+  content: "";
+  transform-origin: 0 0;
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4em;
+  background: var(--play);
+  z-index: -1;
+  opacity: 0.8;
+  transition: transform 0.3s;
+}
+li a:hover::after {
+  transform: scaleX(1);
+}
 .map {
   margin-left: 30px;
 }
@@ -82,6 +165,30 @@ li a {
 
   background-color: var(--play);
   border-radius: 6px;
+
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
+  animation-name: nav_play;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+
+}
+.nav_play:hover {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.1);
+}
+@keyframes nav_play {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 /* ==================================== */
 /*                BOUTONS               */
@@ -89,7 +196,7 @@ li a {
 .boutons {
   display: flex;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 3%;
   width: 50%;
 }
@@ -106,9 +213,28 @@ li a {
   color: var(--h1);
   font-family: "Montserrat";
   font-weight: bolder;
+  font-size: 17px;
 
   background: var(--play);
   border-radius: 6px;
+
+}
+.play i{
+  animation-name: play;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes play {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .info {
   cursor: pointer;
@@ -139,7 +265,7 @@ li a {
 }
 .group {
   margin-left: 5%;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 .group h1 {
   margin-left: 10px;
@@ -149,6 +275,35 @@ li a {
   font-family: "Montserrat";
   font-weight: 800;
   text-align: left;
+}
+.adresse{
+  animation-name: bottom;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.version{
+  animation-name: bottom;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.status{
+  animation-name: bottom;
+  animation-duration: 1250ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes bottom {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .group h2 {
   font-family: "Montserrat";
@@ -163,11 +318,27 @@ li a {
 .skin {
   float: right;
   margin-right: 3%;
+  margin-top: 2%;
 }
 .group_skin img {
   height: 250px;
 }
+.group_skin {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+}
+.group_skin:hover {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.05);
+}
+.group_skin:hover .name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.09);
+}
 .name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
   margin-top: 3px;
   cursor: pointer;
 
@@ -197,13 +368,13 @@ li a {
 /*                ROADMAP               */
 /* ==================================== */
 .rectangle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 2.8%;
-  width: 55%;
+  width: 50%;
   height: 230px;
   background: #464650;
   border-radius: 16px;
