@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-bg-color: #3c3c45;
+  --h1: white;
+  --play: #0066b8;
+  --info-bg: #dbdbdb;
+  --info-text: #303030;
+  --feature-h2: #cfcfcf;
+  --feature-border: #0066b8;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+center {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 80px;
+
+  color: var(--h1);
+}
+/* ==================================== */
+/*                 ITEMS                */
+/* ==================================== */
+.boussole {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 20%;
+  top: 25%;
+}
+.pomme {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 35%;
+  top: 70%;
+}
+.ender {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 3%;
+  top: 35%;
+}
+.arc {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 3%;
+  top: 75%;
+}
+.four {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 20%;
+  top: 63%;
+}
+.carotte {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 35%;
+  top: 30%;
+}
+.diamant {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 53%;
+  top: 60%;
+}
+.steak {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 53%;
+  top: 25%;
+}
+.cookie {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 23%;
+  top: 70%;
+}
+.redstone {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 10%;
+  top: 60%;
+}
+.eau {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 20%;
+  top: 25%;
+}
+.table {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 2%;
+  top: 30%;
+}
