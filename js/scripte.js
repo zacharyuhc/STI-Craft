@@ -42,4 +42,3 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
-
