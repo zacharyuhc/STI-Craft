@@ -4,7 +4,7 @@ Sur ce serveur, vous devrez survivre ensemble dans un monde généré aléatoire
 
 ### Site
 
-(https://zacharyuhc.github.io/STI-Craft/)[https://zacharyuhc.github.io/STI-Craft/]
+https://zacharyuhc.github.io/STI-Craft/[https://zacharyuhc.github.io/STI-Craft/]
 
 ### Built With
 
