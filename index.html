@@ -19,7 +19,7 @@
     <li><a style="margin-left: 30px;" href="joueurs.html">Joueurs</a></li>
     <li><a style="margin-left: 30px;" href="roadmap.html">Roadmap</a></li>
     <li><a style="margin-left: 30px;" href="map.html">Map</a></li>
-    <a href="https://minecraft.net" target="_blank" class="nav_play" id="run">Jouer</a>
+    <a class="nav_play" id="run">Jouer</a>
   </ul>
   <div class="home">
     <div class="skin">
@@ -65,7 +65,7 @@
     </div>
     <h2 class="sous-titre" >Sur ce serveur, vous devrez survivre ensemble dans un monde généré aléatoirement, en rassemblant des ressources, en construisant des abris et en affrontant des monstres.</h2>
     <div class="boutons">
-      <a href="https://minecraft.net" target="_blank" class="play">Jouer<i style="margin-left: 15px;margin-top: 2px;" class="fa-solid fa-play"></i></a>
+      <a class="play">Jouer<i style="margin-left: 15px;margin-top: 2px;" class="fa-solid fa-play"></i></a>
       <a class="info" style="text-decoration: none;" href="https://discord.gg/fRPuY4GTnv">En savoir plus</a>
     </div>
     <div class="feature">
@@ -93,5 +93,30 @@
     </div>
   </div>
 </body>
-<script src="js/scripte.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  document.querySelector('.play').addEventListener('click', () => {
+    for (let index = 0; index < 10; index++) {
+      confetti({
+        angle: 1 + Math.floor(90 * Math.random()),
+        origin: {
+          x: Math.random(),
+          y: 0.7
+        }
+      })
+    }
+  })
+  document.querySelector('.nav_play').addEventListener('click', () => {
+    for (let index = 0; index < 10; index++) {
+      confetti({
+        angle: 1 + Math.floor(90 * Math.random()),
+        origin: {
+          x: Math.random(),
+          y: 0.7
+        }
+      })
+    }
+  })
+</script>
 </html>
