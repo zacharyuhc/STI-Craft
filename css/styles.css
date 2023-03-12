@@ -344,6 +344,11 @@ body {
   flex-wrap: nowrap;
   align-items: center;
 }
+.all_skin_2 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 /* ==================================== */
 /*                ROADMAP               */
 /* ==================================== */
@@ -371,6 +376,31 @@ body {
 @media (max-width: 1386px) {
   .rectangle img  {
     height: 90%;
+  }
+}
+@media (max-height: 730px) {
+  .titre  {
+    margin-top: 1%;
+  }
+}
+@media (max-height: 710px) {
+  .sous-titre  {
+    margin-top: -2%;
+  }
+  .boutons{
+    margin-top: 1%;
+  }
+  .feature{
+    margin-top: -1%;
+  }
+  .rectangle{
+    margin-top: 1%;
+  }
+  .all_skin_2{
+    display: none;
+  }
+  .all_skin{
+    margin-top: 20%;
   }
 }
 @media (max-width: 1529px) {

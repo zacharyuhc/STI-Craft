@@ -260,6 +260,28 @@ center {
   .arc {
     top: 70%;
   }
+  .cookie {
+    top: 75%;
+  }
+}
+@media (min-width: 1719px) {
+  .cookie {
+    top: 75%;
+  }
+  .diamant {
+    top: 75%;
+  }
+}
+@media (max-width: 1719px) {
+  .diamant {
+    top: 75%;
+  }
+  .pomme {
+    top: 75%;
+  }
+  .arc {
+    top: 75%;
+  }
 }
 @media (max-width: 1642px) {
   .four {
@@ -271,10 +293,19 @@ center {
 }
 @media (max-width: 1642px) {
   .pomme {
-    top: 68%;
+    top: 75%;
   }
   .eau {
     top: 35%;
+  }
+  .cookie {
+    top: 75%;
+  }
+  .diamant {
+    top: 75%;
+  }
+  .arc {
+    top: 70%;
   }
 }
 @media (max-width: 1533px) {
@@ -282,43 +313,49 @@ center {
     top: 60%;
   }
   .redstone {
-    top: 57%;
+    top: 60%;
+  }
+  .pomme {
+    top: 73%;
   }
 }
 @media (min-width: 1413px) {
   .diamant {
-    top: 59%;
+    top: 65%;
+  }
+  .four {
+    top: 65%;
   }
 }
 @media (max-width: 1446px) {
   .cookie {
-    top: 65%;
+    top: 70%;
   }
   .diamant {
-    top: 54%;
+    top: 60%;
   }
   .arc {
-    top: 64%;
+    top: 70%;
   }
   .carotte {
     top: 33%;
   }
   .pomme {
-    top: 65%;
+    top: 70%;
   }
 }
 @media (max-width: 1325px) {
   .redstone {
-    top: 54%;
+    top: 60%;
   }
   .cookie {
-    top: 64%;
+    top: 70%;
   }
   .pomme {
-    top: 63%;
+    top: 70%;
   }
   .four {
-    top: 56%;
+    top: 60%;
   }
   .diamant {
     right: 51.5%;
@@ -336,7 +373,7 @@ center {
     top: 27%;
   }
   .diamant {
-    top: 54%;
+    top: 60%;
   }
   .ender {
     top: 32%;
@@ -344,5 +381,11 @@ center {
   .boussole {
     top: 25%;
     right: 18%;
+  }
+  .pomme {
+    top: 67%;
+  }
+  .arc {
+    top: 66%;
   }
 }
