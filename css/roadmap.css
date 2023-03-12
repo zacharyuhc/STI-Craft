@@ -31,6 +31,12 @@ center {
   height: 130px;
   right: 20%;
   top: 25%;
+
+  animation-name: top;
+  animation-duration: 1600ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .pomme {
   position: absolute;
@@ -38,6 +44,12 @@ center {
   height: 130px;
   right: 35%;
   top: 70%;
+
+  animation-name: bottom;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .ender {
   position: absolute;
@@ -45,6 +57,12 @@ center {
   height: 130px;
   right: 3%;
   top: 35%;
+
+  animation-name: top;
+  animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .arc {
   position: absolute;
@@ -52,6 +70,12 @@ center {
   height: 130px;
   right: 3%;
   top: 75%;
+
+  animation-name: bottom;
+  animation-duration: 1900ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .four {
   position: absolute;
@@ -59,6 +83,12 @@ center {
   height: 130px;
   right: 20%;
   top: 63%;
+
+  animation-name: bottom;
+  animation-duration: 1700ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .carotte {
   position: absolute;
@@ -66,6 +96,12 @@ center {
   height: 130px;
   right: 35%;
   top: 30%;
+
+  animation-name: top;
+  animation-duration: 1400ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .diamant {
   position: absolute;
@@ -73,6 +109,12 @@ center {
   height: 130px;
   right: 53%;
   top: 60%;
+
+  animation-name: bottom;
+  animation-duration: 1300ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .steak {
   position: absolute;
@@ -80,6 +122,12 @@ center {
   height: 130px;
   right: 53%;
   top: 25%;
+
+  animation-name: top;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .cookie {
   position: absolute;
@@ -87,6 +135,12 @@ center {
   height: 130px;
   left: 23%;
   top: 70%;
+
+  animation-name: bottom;
+  animation-duration: 1100ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .redstone {
   position: absolute;
@@ -94,6 +148,12 @@ center {
   height: 130px;
   left: 10%;
   top: 60%;
+
+  animation-name: bottom;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .eau {
   position: absolute;
@@ -101,6 +161,12 @@ center {
   height: 130px;
   left: 25%;
   top: 30%;
+
+  animation-name: top;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
 }
 .table {
   position: absolute;
@@ -108,4 +174,154 @@ center {
   height: 120px;
   left: 2%;
   top: 30%;
+
+  animation-name: top;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+/* ==================================== */
+/*              ANIMATIONS              */
+/* ==================================== */
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    transform: translateY(-170px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(170px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.table, .eau, .steak, .carotte, .boussole, .ender{
+  transform: translate(0, 0);
+  transition: transform 330ms ease-in-out;
+}
+.table:hover, .eau:hover, .steak:hover, .carotte:hover, .boussole:hover, .ender:hover{
+  transform: translate(0, -10px);
+  transition: transform 330ms ease-in-out;
+}
+.redstone, .cookie, .diamant, .pomme, .four, .arc{
+  transform: translate(0, 0);
+  transition: transform 330ms ease-in-out;
+}
+.redstone:hover, .cookie:hover, .diamant:hover, .pomme:hover, .four:hover, .arc:hover{
+  transform: translate(0, 10px);
+  transition: transform 330ms ease-in-out;
+}
+/* ==================================== */
+/*              RESPONSIVE              */
+/* ==================================== */
+@media (min-width: 1845px) {
+  .arc  {
+    top: 75%;
+  }
+  .cookie{
+    top: 75%;
+  }
+  .pomme{
+    top: 72%;
+  }
+}
+@media (max-width: 1719px) {
+  .arc  {
+    top: 70%;
+  }
+}
+@media (max-width: 1642px) {
+  .four  {
+    top: 62%;
+  }
+  .diamant  {
+    top: 58%;
+  }
+}
+@media (max-width: 1642px) {
+  .pomme  {
+    top: 68%;
+  }
+  .eau  {
+    top: 35%;
+  }
+}
+@media (max-width: 1533px) {
+  .four  {
+    top: 60%;
+  }
+  .redstone  {
+    top: 57%;
+  }
+}
+@media (min-width: 1413px) {
+  .diamant  {
+    top: 59%;
+  }
+}
+@media (max-width: 1446px) {
+  .cookie  {
+    top: 65%;
+  }
+  .diamant  {
+    top: 54%;
+  }
+  .arc  {
+    top: 64%;
+  }
+  .carotte  {
+    top: 33%;
+  }
+  .pomme  {
+    top: 65%;
+  }
+}
+@media (max-width: 1325px) {
+  .redstone  {
+    top: 54%;
+  }
+  .cookie  {
+    top: 64%;
+  }
+  .pomme  {
+    top: 63%;
+  }
+  .four  {
+    top: 56%;
+  }
+  .diamant{
+    right: 51.5%;
+  }
+  .table{
+    left: 1%;
+  }
+}
+@media (max-width: 1222px) {
+  .eau  {
+    top: 33%;
+    left: 23%;
+  }
+  .steak  {
+    top: 27%;
+  }
+  .diamant  {
+    top: 54%;
+  }
+  .ender  {
+    top: 32%;
+  }
+  .boussole  {
+    top: 25%;
+    right: 18%;
+  }
 }
