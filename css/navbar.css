@@ -102,6 +102,11 @@ li a:hover::after {
   animation-timing-function: ease-in-out;
 
   animation-iteration-count: 1;
+
+  animation-name: nav_play_heart;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 .nav_play:hover {
   transition: transform 330ms ease-in-out;
@@ -115,5 +120,17 @@ li a:hover::after {
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes nav_play_heart {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
   }
 }

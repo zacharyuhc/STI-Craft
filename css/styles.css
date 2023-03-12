@@ -143,6 +143,7 @@ body {
   color: var(--info-text);
   font-family: "Montserrat";
   font-weight: bolder;
+  font-size: 14px;
 
   background: var(--info-bg);
   border-radius: 6px;

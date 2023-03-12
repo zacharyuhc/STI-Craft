@@ -8,6 +8,7 @@
   --info-text: #303030;
   --feature-h2: #cfcfcf;
   --feature-border: #0066b8;
+  --download: #4f4f5a;
 }
 
 body {
@@ -78,6 +79,26 @@ center {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+}
+.download{
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
+  margin-top: 3px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--download);
+  border-radius: 6px;
+}
+.group_text{
+  margin-top: 10px;
 }
 /* ==================================== */
 /*              ANIMATIONS              */
@@ -162,6 +183,48 @@ center {
 .twelve {
   animation-name: play;
   animation-duration: 1800ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.thirteen {
+  animation-name: play;
+  animation-duration: 1900ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.fourteen {
+  animation-name: play;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.fifteen {
+  animation-name: play;
+  animation-duration: 2100ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.sixteen {
+  animation-name: play;
+  animation-duration: 2200ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.seventeen {
+  animation-name: play;
+  animation-duration: 2300ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.eighteen {
+  animation-name: play;
+  animation-duration: 2400ms;
   animation-timing-function: ease-in-out;
 
   animation-iteration-count: 1;
