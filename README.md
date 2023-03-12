@@ -7,3 +7,8 @@ Sur ce serveur, vous devrez survivre ensemble dans un monde généré aléatoire
 * 📙 HTML
 * 💻 CSS
 * 💡 JS
+
+### Responsive
+
+🖥️ : ✅
+📱 : ❌
