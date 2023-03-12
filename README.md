@@ -4,11 +4,11 @@ Sur ce serveur, vous devrez survivre ensemble dans un monde généré aléatoire
 
 ### Built With
 
-* 📙 HTML
-* 💻 CSS
-* 💡 JS
+- 📙 HTML
+- 💻 CSS
+- 💡 JS
 
 ### Responsive
 
-Computer :  ✅  
-Phone :     ❌
+Computer : ✅  
+Phone : ❌
