@@ -95,6 +95,7 @@ body {
 }
 .play {
   cursor: pointer;
+  text-decoration: none;
 
   display: flex;
   align-items: center;
@@ -373,7 +374,7 @@ body {
 }
 @media (max-width: 1529px) {
   .skin {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 }
 @media (min-width: 1611px) {
