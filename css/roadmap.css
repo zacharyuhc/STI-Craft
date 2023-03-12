@@ -8,6 +8,7 @@
   --info-text: #303030;
   --feature-h2: #cfcfcf;
   --feature-border: #0066b8;
+  --download: #4f4f5a;
 }
 
 body {
@@ -205,19 +206,39 @@ center {
     transform: translateY(0px);
   }
 }
-.table, .eau, .steak, .carotte, .boussole, .ender{
+.table,
+.eau,
+.steak,
+.carotte,
+.boussole,
+.ender {
   transform: translate(0, 0);
   transition: transform 330ms ease-in-out;
 }
-.table:hover, .eau:hover, .steak:hover, .carotte:hover, .boussole:hover, .ender:hover{
+.table:hover,
+.eau:hover,
+.steak:hover,
+.carotte:hover,
+.boussole:hover,
+.ender:hover {
   transform: translate(0, -10px);
   transition: transform 330ms ease-in-out;
 }
-.redstone, .cookie, .diamant, .pomme, .four, .arc{
+.redstone,
+.cookie,
+.diamant,
+.pomme,
+.four,
+.arc {
   transform: translate(0, 0);
   transition: transform 330ms ease-in-out;
 }
-.redstone:hover, .cookie:hover, .diamant:hover, .pomme:hover, .four:hover, .arc:hover{
+.redstone:hover,
+.cookie:hover,
+.diamant:hover,
+.pomme:hover,
+.four:hover,
+.arc:hover {
   transform: translate(0, 10px);
   transition: transform 330ms ease-in-out;
 }
@@ -225,102 +246,102 @@ center {
 /*              RESPONSIVE              */
 /* ==================================== */
 @media (min-width: 1845px) {
-  .arc  {
+  .arc {
     top: 75%;
   }
-  .cookie{
+  .cookie {
     top: 75%;
   }
-  .pomme{
+  .pomme {
     top: 72%;
   }
 }
 @media (max-width: 1719px) {
-  .arc  {
+  .arc {
     top: 70%;
   }
 }
 @media (max-width: 1642px) {
-  .four  {
+  .four {
     top: 62%;
   }
-  .diamant  {
+  .diamant {
     top: 58%;
   }
 }
 @media (max-width: 1642px) {
-  .pomme  {
+  .pomme {
     top: 68%;
   }
-  .eau  {
+  .eau {
     top: 35%;
   }
 }
 @media (max-width: 1533px) {
-  .four  {
+  .four {
     top: 60%;
   }
-  .redstone  {
+  .redstone {
     top: 57%;
   }
 }
 @media (min-width: 1413px) {
-  .diamant  {
+  .diamant {
     top: 59%;
   }
 }
 @media (max-width: 1446px) {
-  .cookie  {
+  .cookie {
     top: 65%;
   }
-  .diamant  {
+  .diamant {
     top: 54%;
   }
-  .arc  {
+  .arc {
     top: 64%;
   }
-  .carotte  {
+  .carotte {
     top: 33%;
   }
-  .pomme  {
+  .pomme {
     top: 65%;
   }
 }
 @media (max-width: 1325px) {
-  .redstone  {
+  .redstone {
     top: 54%;
   }
-  .cookie  {
+  .cookie {
     top: 64%;
   }
-  .pomme  {
+  .pomme {
     top: 63%;
   }
-  .four  {
+  .four {
     top: 56%;
   }
-  .diamant{
+  .diamant {
     right: 51.5%;
   }
-  .table{
+  .table {
     left: 1%;
   }
 }
 @media (max-width: 1222px) {
-  .eau  {
+  .eau {
     top: 33%;
     left: 23%;
   }
-  .steak  {
+  .steak {
     top: 27%;
   }
-  .diamant  {
+  .diamant {
     top: 54%;
   }
-  .ender  {
+  .ender {
     top: 32%;
   }
-  .boussole  {
+  .boussole {
     top: 25%;
     right: 18%;
   }

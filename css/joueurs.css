@@ -239,3 +239,16 @@ center {
     transform: translateY(0px);
   }
 }
+/* ==================================== */
+/*              RESPONSIVE              */
+/* ==================================== */
+@media (max-width: 1230px) {
+  .group_skin img  {
+    height: 200px;
+  }
+}
+@media (max-width: 1054px) {
+  .group_skin img  {
+    height: 150px;
+  }
+}
